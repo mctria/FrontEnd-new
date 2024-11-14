@@ -1,6 +1,1 @@
-# TODO
- - BestTeam(gzap) -> Shivam
- - contactUs(animation) ->
- - TeamData(Done) -> Cel
- - content update ->
- - refresh fix ->
+### changes reamins:- BestTeam,contactUs(animation),content update,refresh fix
