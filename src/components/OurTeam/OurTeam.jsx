@@ -19,10 +19,10 @@ const OurTeam = () => {
         <TeamHeader />
         {/*<CoreTeamSection members={coreTeamMembers} />*/}
         {/* <BestTeam /> */}
-        <OtherTeamsSection
+        {/*<OtherTeamsSection
           title="Technical Team"
           members={technicalTeamMembers}
-        />
+        />*/}
       </div>
     </div>
   );
