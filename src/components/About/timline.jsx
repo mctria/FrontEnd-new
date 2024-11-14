@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-
 import { motion, AnimatePresence } from "framer-motion";
 import {
   FaUserCircle,
@@ -87,21 +86,21 @@ const Timeline = () => {
       Title: "Coding the Future",
       Description: "This is the description for coding the future",
     },
-    // {
-    //   year: 2022,
-    //   Title: "Coding the Future",
-    //   Description: "This is the description for coding the future",
-    // },
-    // {
-    //   year: 2022,
-    //   Title: "Coding the Future",
-    //   Description: "This is the description for coding the future",
-    // },
-    // {
-    //   year: 2022,
-    //   Title: "Coding the Future",
-    //   Description: "This is the description for coding the future",
-    // },
+    {
+      year: 2022,
+      Title: "Coding the Future",
+      Description: "This is the description for coding the future",
+    },
+    {
+      year: 2022,
+      Title: "Coding the Future",
+      Description: "This is the description for coding the future",
+    },
+    {
+      year: 2022,
+      Title: "Coding the Future",
+      Description: "This is the description for coding the future",
+    },
   ]);
   const TimelineIcons = [
     <FaUserCircle />,
@@ -143,13 +142,9 @@ const Timeline = () => {
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   };
 
-  
-
   return (
     <div lassName="min-h-screen bg-black text-white">
-      
       <div className="bg-black text-white p-4 md:p-8 mt-32">
-      
   {/* Header Section */}
   <div className="mb-8 md:mb-16 flex flex-col md:flex-row items-center" >
     <button className="bg-[#111111] ml-15 mt-10 text-lg md:text-xl font-medium inline-block px-4 py-2 rounded-full mb-4 md:mb-0 md:mr-4">
@@ -161,7 +156,7 @@ const Timeline = () => {
   </div>
        </div>
         <section className="bg-black mb-20">
-          <div className="md:mt-24 mt-12 text-[#CA80FF]">
+          <div className="md:mt-24 mt-12 text-purple-700">
             <div className="hidden md:block mt-12 mb-72">
               {/* Timeline for desktop */}
               <div className="relative w-full px-4 md:px-8">
