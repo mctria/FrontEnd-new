@@ -20,31 +20,31 @@ const WhatWeDo = () => {
   ];
 
   return (
-    <div className="bg-[#0e0d0d] text-white py-16 px-4 sm:px-6">
+    <div className="bg-black text-white py-16 px-6">
       <div className="container mx-auto max-w-6xl">
         {/* Section Title */}
-        <h3 className="text-base font-medium mb-8 sm:mb-12 bg-[#1C1C1C] inline-block px-4 sm:px-6 py-3 rounded-full border-t border-t-white border-opacity-25">
+        <h3 className="text-base font-medium mb-12 bg-[#1C1C1C] inline-block px-6 py-3 rounded-full">
           What we do?
         </h3>
 
-        {/* Activities List */} 
-        <div className="space-y-8 sm:space-y-4">
+        {/* Activities List */}
+        <div className="space-y-4">
           {activities.map((activity) => (
             <div 
               key={activity.number}
-              className="flex flex-col sm:flex-row items-start sm:items-center bg-[#1C1C1C] border-t border-t-white border-opacity-25 rounded-3xl p-4 sm:p-6"
+              className="flex flex-col md:flex-row items-start md:items-center bg-[#1C1C1C] border-t border-t-white border-opacity-25 rounded-3xl p-6"
             >
               {/* Number and Title */}
-              <div className="flex-shrink-0 w-full sm:w-1/2 mb-4 sm:mb-0 sm:pr-4 text-center sm:text-left">
-                <h3 className="text-xl sm:text-2xl font-medium flex justify-center sm:justify-start items-center gap-2">
+              <div className="flex-shrink-0 md:w-1/2 pr-4">
+                <h3 className="text-xl md:text-2xl font-medium flex items-center gap-2 ">
                   <span className="text-white">{activity.number}.</span>
                   <span>{activity.title}</span>
                 </h3>
               </div>
 
               {/* Description */}
-              <div className="flex-grow text-center sm:text-left">
-                <p className="text-white text-lg leading-relaxed sm:ml-12">
+              <div className="flex-grow text-left md:text-center">
+                <p className="text-white text-lg leading-relaxed ml-0 md:ml-12">
                   {activity.description}
                 </p>
               </div>

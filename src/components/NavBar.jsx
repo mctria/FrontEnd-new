@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import logo from './logo.png';
-import menu from './menu.png';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import logo from "./logo.png";
+import menu from "./menu.png";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,10 +9,11 @@ const Navbar = () => {
 
   return (
     <div className="flex justify-center">
-      <nav className={`fixed top-0 mt-9 z-50 bg-[#1b1b1b] bg-opacity-90 shadow-lg max-w-6xl w-full ${
-        isMenuOpen ? 'rounded-[24px]' : 'rounded-[24px]'
-      } px-3 sm:px-4 lg:px-14 py-4 flex flex-col md:flex-row md:items-center justify-between border-t border-t-[#615f5f] transition-all duration-300 ease-in-out`}>
-
+      <nav
+        className={`fixed top-0 mt-9 z-50 bg-[#1b1b1b] bg-opacity-90 shadow-lg max-w-6xl w-full ${
+          isMenuOpen ? "rounded-[24px]" : "rounded-[24px]"
+        } px-3 sm:px-4 lg:px-14 py-4 flex flex-col md:flex-row md:items-center justify-between border-t border-t-[#615f5f] transition-all duration-300 ease-in-out`}
+      >
         {/* Top Bar with Logo and Menu */}
         <div className="flex items-center justify-between md:justify-start w-full md:w-auto">
           {/* Logo Section */}
@@ -38,13 +39,15 @@ const Navbar = () => {
             items-center space-y-3 md:space-y-0
             transition-all duration-300 ease-in-out
             w-full md:w-auto text-center
-            ${isMenuOpen 
-              ? 'opacity-100 visible mt-6 mb-4 h-auto' 
-              : 'opacity-0 md:opacity-100 invisible md:visible h-0 md:h-auto mt-0 mb-0 md:mt-0'
+            ${
+              isMenuOpen
+                ? "opacity-100 visible mt-6 mb-4 h-auto"
+                : "opacity-0 md:opacity-100 invisible md:visible h-0 md:h-auto mt-0 mb-0 md:mt-0"
             }
           `}
         >
           <Link
+            replace={true}
             to="/"
             className="px-4 sm:px-6 md:px-3 lg:px-4 py-2 text-sm sm:text-base lg:text-lg font-medium text-white border border-purple-400 rounded-full hover:bg-purple-600 hover:text-black hover:border-transparent transition duration-300  sm:w-50% md:w-auto"
             onClick={() => setIsMenuOpen(false)}
@@ -52,6 +55,7 @@ const Navbar = () => {
             Home
           </Link>
           <Link
+            replace={true}
             to="/about"
             className="px-4 sm:px-6 md:px-3 lg:px-4 py-2 text-sm sm:text-base lg:text-lg font-medium text-white border border-purple-400 rounded-full hover:bg-purple-600 hover:text-black hover:border-transparent transition duration-300  sm:w-50% md:w-auto"
             onClick={() => setIsMenuOpen(false)}
@@ -59,6 +63,7 @@ const Navbar = () => {
             About
           </Link>
           <Link
+            replace={true}
             to="/our-team"
             className="px-4 sm:px-6 md:px-3 lg:px-4 py-2 text-sm sm:text-base lg:text-lg font-medium text-white border border-purple-400 rounded-full hover:bg-purple-600 hover:text-black hover:border-transparent transition duration-300  sm:w-50% md:w-auto"
             onClick={() => setIsMenuOpen(false)}
@@ -66,6 +71,7 @@ const Navbar = () => {
             Our teams
           </Link>
           <Link
+            replace={true}
             to="/contact"
             className="px-4 sm:px-6 md:px-3 lg:px-4 py-2 text-sm sm:text-base lg:text-lg font-medium text-white border border-purple-400 rounded-full hover:bg-purple-600 hover:text-black hover:border-transparent transition duration-300  sm:w-50% md:w-auto"
             onClick={() => setIsMenuOpen(false)}
@@ -79,15 +85,16 @@ const Navbar = () => {
           className={`
             flex justify-center sm:relative md:rounded-full md:p-[2px] sm:bg-gradient-to-r md:from-transparent md:via-white to-transparent animate-border
             transition-all duration-300 ease-in-out text-center
-            ${isMenuOpen 
-              ? 'opacity-100 visible mt-2 mb-4 h-auto' 
-              : 'opacity-0 md:opacity-100 invisible md:visible h-0 md:h-auto mt-0 mb-0'
+            ${
+              isMenuOpen
+                ? "opacity-100 visible mt-2 mb-4 h-auto"
+                : "opacity-0 md:opacity-100 invisible md:visible h-0 md:h-auto mt-0 mb-0"
             }
           `}
         >
-          <Link 
-            to="/register" 
-            className="flex items-center justify-center md:justify-start bg-[#252525] text-sm sm:text-base lg:text-lg text-white px-4 sm:px-6 md:px-8 lg:px-10 py-2 sm:py-3 rounded-full shadow-inner  sm:w-50% md:w-auto whitespace-nowrap" 
+          <Link
+            to="/register"
+            className="flex items-center justify-center md:justify-start bg-[#252525] text-sm sm:text-base lg:text-lg text-white px-4 sm:px-6 md:px-8 lg:px-10 py-2 sm:py-3 rounded-full shadow-inner  sm:w-50% md:w-auto whitespace-nowrap"
             onClick={() => setIsMenuOpen(false)}
           >
             <span className="flex h-4 w-3 mr-2">
