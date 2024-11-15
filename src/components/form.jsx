@@ -29,10 +29,10 @@ function EventRegistrationForm() {
       setEmail("");
       setPhone("");
       setEntroll("");
-      setDiv("");
-      
-      return navigate('/'); 
+      setDiv(""); 
     }
+    // alert("Registeration Successfull !");
+    // navigate("/");
   };
 
   return (
@@ -121,7 +121,7 @@ function EventRegistrationForm() {
 
           <button
             type="submit"
-            onClick={Submit(Name, Email, Phone, Entroll, Div)}
+            onClick={()=>Submit(Name, Email, Phone, Entroll, Div)}
             className="w-full py-2 mt-6 bg-white text-black font-bold rounded-full text-base hover:bg-purple-500 hover:text-white transition duration-200"
           >
             Submit
