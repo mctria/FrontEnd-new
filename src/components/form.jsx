@@ -32,7 +32,7 @@ function EventRegistrationForm() {
       setDiv(""); 
     }
     alert("Registeration Successfull !");
-    // navigate("/");
+    navigate("/");
   };
 
   return (
