@@ -31,7 +31,7 @@ function EventRegistrationForm() {
       setEntroll("");
       setDiv(""); 
     }
-    // alert("Registeration Successfull !");
+    alert("Registeration Successfull !");
     // navigate("/");
   };
 
