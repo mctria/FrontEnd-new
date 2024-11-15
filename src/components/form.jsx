@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { NodeMailer } from "../service/API";
+import { useNavigate } from "react-router-dom";
 
 function EventRegistrationForm() {
   const routePath = useLocation();
@@ -16,6 +17,8 @@ function EventRegistrationForm() {
   const [Entroll, setEntroll] = useState("");
   const [Div, setDiv] = useState("");
 
+  const navigate = useNavigate();
+
   const Submit = (Name, Email, Phone, Entroll, Div) => {
     if (Name && Email && Phone && Entroll) {
       let data = { name: Name, email: Email, number: Phone };
@@ -27,6 +30,8 @@ function EventRegistrationForm() {
       setPhone("");
       setEntroll("");
       setDiv("");
+      
+      return navigate('/'); 
     }
   };
 
