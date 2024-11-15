@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const uri = "192.168.1.6";
-const BASE_URL = `https://aces-api.onrender.com`;
+const BASE_URL = process.env.URL || `https://aces-api.onrender.com`;
 
 var Endpoint = {
   Blog: "/blog",
